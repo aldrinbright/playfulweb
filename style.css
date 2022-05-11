@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#comingSoon {
+    background-color: #525966;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#logo {
+    padding-top: 51.42px;
+}
+
+#logo img {
+    width: 262.29px;
+    height: 51.42px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header p {
+    padding-top: 5.07px;
+    color: #ffffff;
+    font-size: 1.063rem;
+    font-family: 'Mulish';
+    line-height: 1.268rem;
+    letter-spacing: 4.4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#header h1 {
+    padding-top: 17px;
+    width: 616px;
+    height: 86px;
+    font-size: 2.25rem;
+    text-align: center;
+    line-height: 2.684rem;
+    font-family: 'Mulish';
+    color: #ffffff;
+}
+
+#input {
+    position: relative;
+    /* border: 2px solid red; */
+    width: 444px;
+    padding-top: 30px;
+
+    height: 43px;
+}
+
+#input input {
+    position: absolute;
+    top: 37px;
+    width: 444px;
+    border-radius: 12px;
+    height: 43px;
+    border: none;
+    font-size: 0.938rem;
+    line-height: 1.6rem;
+    padding-left: 14px;
+    font-family: 'Mulish';
+}
+
+#input input:focus {
+    border: none;
+    outline: none;
+}
+
+#join_btn {
+    width: 202px;
+    height: 43px;
+    position: absolute;
+    right: 0;
+    background-color: #fd4c5c;
+    font-family: 'Mulish';
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+    top: 37px;
+    border-radius: 12px;
+    border: none;
+    transition: all ease-in 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    color: rgba(255, 255, 255, 0);
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 16px;
+    border-top-color: white;
+    animation: load 1s ease infinite;
+    transition: all 0.5s ease-in;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+#join_btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#input input:focus::placeholder {
+    transition: all 0.2s ease-in-out;
+    color: transparent;
+}
+
+#video {
+    position: absolute;
+    bottom: 48px;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 56px;
+    height: 417px;
+}
+#bg_video {
+    width: 100%;
+    padding: 0 2.42%;
+    height: 100%;
+}
+
+.base {
+    /* border: 2px solid rgb(100, 226, 16); */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    width: 100vw;
+}
+.base img {
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100px;
+}
+
+@media screen and (max-width: 414px) {
+    #comingSoon {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #logo {
+        position: absolute;
+        padding-top: 0;
+        top: 228px;
+    }
+
+    #logo img {
+        width: 199.81px;
+        height: 39.17px;
+    }
+    #header p {
+        line-height: 15.45px;
+        position: absolute;
+        top: 272.56px;
+        width: 469.27px;
+        height: 15px;
+        font-weight: 600;
+        font-size: 12.95px;
+    }
+    #header h1 {
+        position: absolute;
+        top: 305.18px;
+        width: 384.54px;
+        height: 54px;
+        font-size: 22.47px;
+        line-height: 26.81px;
+    }
+    #input {
+        position: absolute;
+        top: 387px;
+        width: 338px;
+        height: 45px;
+    }
+    #input input {
+        top: 0;
+        width: 338px;
+        height: 45px;
+        font-size: 11.43px;
+    }
+    #join_btn {
+        top: 0;
+        width: 154px;
+        height: 46px;
+        font-size: 12.19px;
+    }
+    #video {
+        margin-top: 0;
+        width: 100%;
+        height: 227px;
+        position: absolute;
+        bottom: 28px;
+    }
+
+    .base {
+        width: 100%;
+        height: 50px;
+    }
+    .base img {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+/* * {
+    outline: 2px solid red;
+} */
